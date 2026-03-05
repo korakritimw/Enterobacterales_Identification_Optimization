@@ -1,0 +1,55 @@
+================================================================================
+TASK 5: TWO-GROUP COMPARISON (STUDY VS CONTROL)
+================================================================================
+Analysis Date: 2025-11-16 17:15:22
+Input File: C:\Users\user\OneDrive - Baylor College of Medicine\CPEP Fellow\Research projects\ATB effect\Current data sharing\Final file for publication\Python scripts\Basic scripts\task5_data_template.csv
+
+--------------------------------------------------------------------------------
+PROPORTION FOR EACH GROUP
+--------------------------------------------------------------------------------
+
+Study:
+  Yes: 45
+  No: 5
+  Total: 50
+  Proportion (Yes): 0.9000 (90.00%)
+  Formula: Yes/(Yes+No) = 45/(45+5) = 45/50
+  95% CI (Wilson Score): 0.7864 - 0.9565 (78.64% - 95.65%)
+
+Control:
+  Yes: 40
+  No: 10
+  Total: 50
+  Proportion (Yes): 0.8000 (80.00%)
+  Formula: Yes/(Yes+No) = 40/(40+10) = 40/50
+  95% CI (Wilson Score): 0.6696 - 0.8876 (66.96% - 88.76%)
+
+--------------------------------------------------------------------------------
+TWO-BY-TWO CONTINGENCY TABLE
+--------------------------------------------------------------------------------
+
+Group                  Yes         No      Total
+Study                   45          5         50
+Control                 40         10         50
+
+--------------------------------------------------------------------------------
+STATISTICAL COMPARISON
+--------------------------------------------------------------------------------
+
+Test Used: Chi-squared Test (with Yates' correction)
+Reason: All cells have at least 5 entries (minimum: 5)
+Chi-squared statistic: 1.2549
+Degrees of freedom: 1
+p-value: 0.262618
+Odds Ratio: 2.2500
+95% CI for Odds Ratio: 0.7089 - 7.1411
+
+--------------------------------------------------------------------------------
+INTERPRETATION
+--------------------------------------------------------------------------------
+
+CONCLUSION: There is NO statistically significant difference between the two groups (p >= 0.05)
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================

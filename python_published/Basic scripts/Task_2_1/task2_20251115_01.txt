@@ -1,0 +1,59 @@
+================================================================================
+TASK 2: CONTINGENCY TABLE COMPARISON (3 GROUPS)
+================================================================================
+Analysis Date: 2025-11-15 18:16:36
+Input File: C:\Users\user\OneDrive - Baylor College of Medicine\CPEP Fellow\Research projects\ATB effect\Current data sharing\Final file for publication\Python scripts\Basic scripts\Task_2_1\task2_data_template.csv
+
+--------------------------------------------------------------------------------
+SENSITIVITY FOR EACH GROUP
+--------------------------------------------------------------------------------
+
+Original:
+  Correct: 232
+  Incorrect: 8
+  Total: 240
+  Sensitivity: 0.9667 (96.67%)
+  Formula: Correct/(Correct+Incorrect) = 232/(232+8) = 232/240
+  95% CI (Wilson Score): 0.9356 - 0.9830 (93.56% - 98.30%)
+
+Subculture:
+  Correct: 237
+  Incorrect: 3
+  Total: 240
+  Sensitivity: 0.9875 (98.75%)
+  Formula: Correct/(Correct+Incorrect) = 237/(237+3) = 237/240
+  95% CI (Wilson Score): 0.9639 - 0.9957 (96.39% - 99.57%)
+
+Control:
+  Correct: 147
+  Incorrect: 3
+  Total: 150
+  Sensitivity: 0.9800 (98.00%)
+  Formula: Correct/(Correct+Incorrect) = 147/(147+3) = 147/150
+  95% CI (Wilson Score): 0.9429 - 0.9932 (94.29% - 99.32%)
+
+--------------------------------------------------------------------------------
+CONTINGENCY TABLE (3x2)
+--------------------------------------------------------------------------------
+
+Group                Correct    Incorrect    Total
+Original                 232            8      240
+Subculture               237            3      240
+Control                  147            3      150
+
+--------------------------------------------------------------------------------
+OVERALL STATISTICAL COMPARISON
+--------------------------------------------------------------------------------
+
+Test Used: Fisher's Exact Test (generalized for RxC table)
+Reason: At least one cell has fewer than 5 entries (minimum: 3)
+Chi-squared statistic: 2.4418
+Degrees of freedom: 2
+p-value: 0.294970
+
+OVERALL CONCLUSION: There is NO statistically significant difference among the groups (p >= 0.05)
+Pairwise comparisons not performed.
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================

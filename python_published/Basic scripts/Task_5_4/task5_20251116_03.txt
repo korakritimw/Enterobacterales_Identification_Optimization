@@ -1,0 +1,54 @@
+================================================================================
+TASK 5: TWO-GROUP COMPARISON (STUDY VS CONTROL)
+================================================================================
+Analysis Date: 2025-11-16 17:23:05
+Input File: C:\Users\user\OneDrive - Baylor College of Medicine\CPEP Fellow\Research projects\ATB effect\Current data sharing\Final file for publication\Python scripts\Basic scripts\Task_5_4\task5_data_template.csv
+
+--------------------------------------------------------------------------------
+PROPORTION FOR EACH GROUP
+--------------------------------------------------------------------------------
+
+Study:
+  Yes: 2
+  No: 61
+  Total: 63
+  Proportion (Yes): 0.0317 (3.17%)
+  Formula: Yes/(Yes+No) = 2/(2+61) = 2/63
+  95% CI (Wilson Score): 0.0087 - 0.1086 (0.87% - 10.86%)
+
+Control	:
+  Yes: 453
+  No: 1397
+  Total: 1850
+  Proportion (Yes): 0.2449 (24.49%)
+  Formula: Yes/(Yes+No) = 453/(453+1397) = 453/1850
+  95% CI (Wilson Score): 0.2258 - 0.2650 (22.58% - 26.50%)
+
+--------------------------------------------------------------------------------
+TWO-BY-TWO CONTINGENCY TABLE
+--------------------------------------------------------------------------------
+
+Group                  Yes         No      Total
+Study                    2         61         63
+Control	               453       1397       1850
+
+--------------------------------------------------------------------------------
+STATISTICAL COMPARISON
+--------------------------------------------------------------------------------
+
+Test Used: Fisher's Exact Test
+Reason: At least one cell has fewer than 5 entries (minimum: 2)
+Odds Ratio: 0.1011
+p-value: 0.000013
+95% CI for Odds Ratio: 0.0246 - 0.4152
+
+--------------------------------------------------------------------------------
+INTERPRETATION
+--------------------------------------------------------------------------------
+
+CONCLUSION: There is a statistically significant difference between the two groups (p < 0.05)
+The Control	 group has 9.89 times the odds of 'Yes' compared to the Study group.
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================

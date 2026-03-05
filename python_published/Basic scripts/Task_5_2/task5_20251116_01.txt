@@ -1,0 +1,56 @@
+================================================================================
+TASK 5: TWO-GROUP COMPARISON (STUDY VS CONTROL)
+================================================================================
+Analysis Date: 2025-11-16 17:20:14
+Input File: C:\Users\user\OneDrive - Baylor College of Medicine\CPEP Fellow\Research projects\ATB effect\Current data sharing\Final file for publication\Python scripts\Basic scripts\Task_5_2\task5_data_template.csv
+
+--------------------------------------------------------------------------------
+PROPORTION FOR EACH GROUP
+--------------------------------------------------------------------------------
+
+Study:
+  Yes: 6
+  No: 57
+  Total: 63
+  Proportion (Yes): 0.0952 (9.52%)
+  Formula: Yes/(Yes+No) = 6/(6+57) = 6/63
+  95% CI (Wilson Score): 0.0444 - 0.1926 (4.44% - 19.26%)
+
+Control	:
+  Yes: 866
+  No: 1960
+  Total: 2826
+  Proportion (Yes): 0.3064 (30.64%)
+  Formula: Yes/(Yes+No) = 866/(866+1960) = 866/2826
+  95% CI (Wilson Score): 0.2897 - 0.3237 (28.97% - 32.37%)
+
+--------------------------------------------------------------------------------
+TWO-BY-TWO CONTINGENCY TABLE
+--------------------------------------------------------------------------------
+
+Group                  Yes         No      Total
+Study                    6         57         63
+Control	               866       1960       2826
+
+--------------------------------------------------------------------------------
+STATISTICAL COMPARISON
+--------------------------------------------------------------------------------
+
+Test Used: Chi-squared Test (with Yates' correction)
+Reason: All cells have at least 5 entries (minimum: 6)
+Chi-squared statistic: 12.0617
+Degrees of freedom: 1
+p-value: 0.000515
+Odds Ratio: 0.2382
+95% CI for Odds Ratio: 0.1023 - 0.5546
+
+--------------------------------------------------------------------------------
+INTERPRETATION
+--------------------------------------------------------------------------------
+
+CONCLUSION: There is a statistically significant difference between the two groups (p < 0.05)
+The Control	 group has 4.20 times the odds of 'Yes' compared to the Study group.
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================

@@ -1,0 +1,52 @@
+================================================================================
+TASK 3: MCNEMAR TEST COMPARISON
+================================================================================
+Analysis Date: 2025-11-15 10:35:06
+Input File: C:\Users\user\OneDrive - Baylor College of Medicine\CPEP Fellow\Research projects\ATB effect\Current data sharing\Final file for publication\Python scripts\Basic scripts\task3_data_template.csv
+
+--------------------------------------------------------------------------------
+SENSITIVITY FOR EACH TEST
+--------------------------------------------------------------------------------
+
+Test 1:
+  Correct: 45
+  Incorrect: 5
+  Total: 50
+  Sensitivity: 0.9000 (90.00%)
+  Formula: Correct/(Correct+Incorrect) = 45/(45+5) = 45/50
+  95% CI (Wilson Score): 0.7864 - 0.9565 (78.64% - 95.65%)
+
+Test 2:
+  Correct: 40
+  Incorrect: 10
+  Total: 50
+  Sensitivity: 0.8000 (80.00%)
+  Formula: Correct/(Correct+Incorrect) = 40/(40+10) = 40/50
+  95% CI (Wilson Score): 0.6696 - 0.8876 (66.96% - 88.76%)
+
+--------------------------------------------------------------------------------
+MCNEMAR TEST CONTINGENCY TABLE
+(Paired data format)
+--------------------------------------------------------------------------------
+
+                Test2_Correct    Test2_Incorrect    Total
+Test1_Correct         40                5         45
+Test1_Incorrect        0                5          5
+Total                 40               10         50
+
+NOTE: This table shows paired comparisons (same subjects tested with both methods).
+
+--------------------------------------------------------------------------------
+MCNEMAR TEST
+--------------------------------------------------------------------------------
+
+Test Used: McNemar's Exact Test
+Reason: Number of discordant pairs (5) < 25
+Chi-squared statistic: 0.0000
+p-value: 0.062500
+
+CONCLUSION: There is NO statistically significant difference between the two tests (p >= 0.05)
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================

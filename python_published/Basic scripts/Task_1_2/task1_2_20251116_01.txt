@@ -1,0 +1,395 @@
+================================================================================
+TASK 1_2: DIAGNOSTIC TEST COMPARISON (4 TESTS)
+================================================================================
+Analysis Date: 2025-11-16 10:10:10
+Input File: C:\Users\user\OneDrive - Baylor College of Medicine\CPEP Fellow\Research projects\ATB effect\Current data sharing\Final file for publication\Python scripts\Basic scripts\Task_1_2\task1_2_data_template.csv
+
+This analysis compares diagnostic test performance across multiple methods
+using contingency tables for three key metrics:
+1. Sensitivity (TP vs FN)
+2. Specificity (TN vs FP)
+3. Accuracy (TP+TN vs FP+FN)
+
+
+================================================================================
+SENSITIVITY ANALYSIS
+================================================================================
+
+--------------------------------------------------------------------------------
+SENSITIVITY FOR EACH TEST
+--------------------------------------------------------------------------------
+
+N_Phenotype:
+  TP: 127
+  FN: 23
+  Total: 150
+  Sensitivity: 0.8467 (84.67%)
+  Formula: TP/(TP+FN)
+  Calculation: 127/150
+  95% CI (Wilson Score): 0.7804 - 0.8956 (78.04% - 89.56%)
+
+P_phenotype:
+  TP: 147
+  FN: 3
+  Total: 150
+  Sensitivity: 0.9800 (98.00%)
+  Formula: TP/(TP+FN)
+  Calculation: 147/150
+  95% CI (Wilson Score): 0.9429 - 0.9932 (94.29% - 99.32%)
+
+A_phenotype:
+  TP: 149
+  FN: 1
+  Total: 150
+  Sensitivity: 0.9933 (99.33%)
+  Formula: TP/(TP+FN)
+  Calculation: 149/150
+  95% CI (Wilson Score): 0.9632 - 0.9988 (96.32% - 99.88%)
+
+MALDI_TOF:
+  TP: 146
+  FN: 4
+  Total: 150
+  Sensitivity: 0.9733 (97.33%)
+  Formula: TP/(TP+FN)
+  Calculation: 146/150
+  95% CI (Wilson Score): 0.9334 - 0.9896 (93.34% - 98.96%)
+
+--------------------------------------------------------------------------------
+CONTINGENCY TABLE FOR SENSITIVITY (4x2)
+--------------------------------------------------------------------------------
+
+Test                         TP         FN      Total
+N_Phenotype                 127         23        150
+P_phenotype                 147          3        150
+A_phenotype                 149          1        150
+MALDI_TOF                   146          4        150
+
+--------------------------------------------------------------------------------
+OVERALL STATISTICAL COMPARISON FOR SENSITIVITY
+--------------------------------------------------------------------------------
+
+Test Used: Fisher's Exact Test (generalized for RxC table)
+Reason: At least one cell has fewer than 5 entries (minimum: 1)
+Chi-squared statistic: 42.8256
+Degrees of freedom: 3
+p-value: 0.000000
+
+OVERALL CONCLUSION: There is a statistically significant difference in Sensitivity among the tests (p < 0.05)
+Proceeding with pairwise comparisons...
+
+--------------------------------------------------------------------------------
+PAIRWISE COMPARISONS FOR SENSITIVITY (Holm-Bonferroni Method)
+--------------------------------------------------------------------------------
+
+Comparison 1: N_Phenotype vs P_phenotype
+----------------------------------------
+Test                         TP         FN
+N_Phenotype                 127         23
+P_phenotype                 147          3
+
+Test: Fisher's Exact Test
+Reason: At least one cell < 5 (minimum: 3)
+Odds Ratio: 0.1127
+p-value: 0.000044
+Holm-Bonferroni rank: 2 (sorted by p-value)
+Holm-Bonferroni adjusted alpha: 0.010000 (0.05/5)
+Result: SIGNIFICANT difference (p < 0.010000)
+
+Comparison 2: N_Phenotype vs A_phenotype
+----------------------------------------
+Test                         TP         FN
+N_Phenotype                 127         23
+A_phenotype                 149          1
+
+Test: Fisher's Exact Test
+Reason: At least one cell < 5 (minimum: 1)
+Odds Ratio: 0.0371
+p-value: 0.000001
+Holm-Bonferroni rank: 1 (sorted by p-value)
+Holm-Bonferroni adjusted alpha: 0.008333 (0.05/6)
+Result: SIGNIFICANT difference (p < 0.008333)
+
+Comparison 3: N_Phenotype vs MALDI_TOF
+----------------------------------------
+Test                         TP         FN
+N_Phenotype                 127         23
+MALDI_TOF                   146          4
+
+Test: Fisher's Exact Test
+Reason: At least one cell < 5 (minimum: 4)
+Odds Ratio: 0.1513
+p-value: 0.000164
+Holm-Bonferroni rank: 3 (sorted by p-value)
+Holm-Bonferroni adjusted alpha: 0.012500 (0.05/4)
+Result: SIGNIFICANT difference (p < 0.012500)
+
+Comparison 4: P_phenotype vs A_phenotype
+----------------------------------------
+Test                         TP         FN
+P_phenotype                 147          3
+A_phenotype                 149          1
+
+Test: Fisher's Exact Test
+Reason: At least one cell < 5 (minimum: 1)
+Odds Ratio: 0.3289
+p-value: 0.622479
+Holm-Bonferroni rank: 5 (sorted by p-value)
+Holm-Bonferroni adjusted alpha: 0.025000 (0.05/2)
+Result: NO significant difference (p >= 0.025000)
+
+Comparison 5: P_phenotype vs MALDI_TOF
+----------------------------------------
+Test                         TP         FN
+P_phenotype                 147          3
+MALDI_TOF                   146          4
+
+Test: Fisher's Exact Test
+Reason: At least one cell < 5 (minimum: 3)
+Odds Ratio: 1.3425
+p-value: 1.000000
+Holm-Bonferroni rank: 6 (sorted by p-value)
+Holm-Bonferroni adjusted alpha: 0.050000 (0.05/1)
+Result: NO significant difference (p >= 0.050000)
+
+Comparison 6: A_phenotype vs MALDI_TOF
+----------------------------------------
+Test                         TP         FN
+A_phenotype                 149          1
+MALDI_TOF                   146          4
+
+Test: Fisher's Exact Test
+Reason: At least one cell < 5 (minimum: 1)
+Odds Ratio: 4.0822
+p-value: 0.370798
+Holm-Bonferroni rank: 4 (sorted by p-value)
+Holm-Bonferroni adjusted alpha: 0.016667 (0.05/3)
+Result: NO significant difference (p >= 0.016667)
+
+
+================================================================================
+SPECIFICITY ANALYSIS
+================================================================================
+
+--------------------------------------------------------------------------------
+SPECIFICITY FOR EACH TEST
+--------------------------------------------------------------------------------
+
+N_Phenotype:
+  TN: 48
+  FP: 2
+  Total: 50
+  Specificity: 0.9600 (96.00%)
+  Formula: TN/(TN+FP)
+  Calculation: 48/50
+  95% CI (Wilson Score): 0.8654 - 0.9890 (86.54% - 98.90%)
+
+P_phenotype:
+  TN: 50
+  FP: 0
+  Total: 50
+  Specificity: 1.0000 (100.00%)
+  Formula: TN/(TN+FP)
+  Calculation: 50/50
+  95% CI (Wilson Score): 0.9287 - 1.0000 (92.87% - 100.00%)
+
+A_phenotype:
+  TN: 50
+  FP: 0
+  Total: 50
+  Specificity: 1.0000 (100.00%)
+  Formula: TN/(TN+FP)
+  Calculation: 50/50
+  95% CI (Wilson Score): 0.9287 - 1.0000 (92.87% - 100.00%)
+
+MALDI_TOF:
+  TN: 50
+  FP: 0
+  Total: 50
+  Specificity: 1.0000 (100.00%)
+  Formula: TN/(TN+FP)
+  Calculation: 50/50
+  95% CI (Wilson Score): 0.9287 - 1.0000 (92.87% - 100.00%)
+
+--------------------------------------------------------------------------------
+CONTINGENCY TABLE FOR SPECIFICITY (4x2)
+--------------------------------------------------------------------------------
+
+Test                         TN         FP      Total
+N_Phenotype                  48          2         50
+P_phenotype                  50          0         50
+A_phenotype                  50          0         50
+MALDI_TOF                    50          0         50
+
+--------------------------------------------------------------------------------
+OVERALL STATISTICAL COMPARISON FOR SPECIFICITY
+--------------------------------------------------------------------------------
+
+Test Used: Fisher's Exact Test (generalized for RxC table)
+Reason: At least one cell has fewer than 5 entries (minimum: 0)
+Chi-squared statistic: 6.0606
+Degrees of freedom: 3
+p-value: 0.108699
+
+OVERALL CONCLUSION: There is NO statistically significant difference in Specificity among the tests (p >= 0.05)
+Pairwise comparisons not performed.
+
+================================================================================
+ACCURACY ANALYSIS
+================================================================================
+
+--------------------------------------------------------------------------------
+ACCURACY FOR EACH TEST
+--------------------------------------------------------------------------------
+
+N_Phenotype:
+  TP_TN: 175
+  FP_FN: 25
+  Total: 200
+  Accuracy: 0.8750 (87.50%)
+  Formula: (TP+TN)/(TP+TN+FP+FN)
+  Calculation: 175/200
+  95% CI (Wilson Score): 0.8220 - 0.9139 (82.20% - 91.39%)
+
+P_phenotype:
+  TP_TN: 197
+  FP_FN: 3
+  Total: 200
+  Accuracy: 0.9850 (98.50%)
+  Formula: (TP+TN)/(TP+TN+FP+FN)
+  Calculation: 197/200
+  95% CI (Wilson Score): 0.9568 - 0.9949 (95.68% - 99.49%)
+
+A_phenotype:
+  TP_TN: 199
+  FP_FN: 1
+  Total: 200
+  Accuracy: 0.9950 (99.50%)
+  Formula: (TP+TN)/(TP+TN+FP+FN)
+  Calculation: 199/200
+  95% CI (Wilson Score): 0.9722 - 0.9991 (97.22% - 99.91%)
+
+MALDI_TOF:
+  TP_TN: 196
+  FP_FN: 4
+  Total: 200
+  Accuracy: 0.9800 (98.00%)
+  Formula: (TP+TN)/(TP+TN+FP+FN)
+  Calculation: 196/200
+  95% CI (Wilson Score): 0.9497 - 0.9922 (94.97% - 99.22%)
+
+--------------------------------------------------------------------------------
+CONTINGENCY TABLE FOR ACCURACY (4x2)
+--------------------------------------------------------------------------------
+
+Test                      TP_TN      FP_FN      Total
+N_Phenotype                 175         25        200
+P_phenotype                 197          3        200
+A_phenotype                 199          1        200
+MALDI_TOF                   196          4        200
+
+--------------------------------------------------------------------------------
+OVERALL STATISTICAL COMPARISON FOR ACCURACY
+--------------------------------------------------------------------------------
+
+Test Used: Fisher's Exact Test (generalized for RxC table)
+Reason: At least one cell has fewer than 5 entries (minimum: 1)
+Chi-squared statistic: 47.8843
+Degrees of freedom: 3
+p-value: 0.000000
+
+OVERALL CONCLUSION: There is a statistically significant difference in Accuracy among the tests (p < 0.05)
+Proceeding with pairwise comparisons...
+
+--------------------------------------------------------------------------------
+PAIRWISE COMPARISONS FOR ACCURACY (Holm-Bonferroni Method)
+--------------------------------------------------------------------------------
+
+Comparison 1: N_Phenotype vs P_phenotype
+----------------------------------------
+Test                      TP_TN      FP_FN
+N_Phenotype                 175         25
+P_phenotype                 197          3
+
+Test: Fisher's Exact Test
+Reason: At least one cell < 5 (minimum: 3)
+Odds Ratio: 0.1066
+p-value: 0.000015
+Holm-Bonferroni rank: 2 (sorted by p-value)
+Holm-Bonferroni adjusted alpha: 0.010000 (0.05/5)
+Result: SIGNIFICANT difference (p < 0.010000)
+
+Comparison 2: N_Phenotype vs A_phenotype
+----------------------------------------
+Test                      TP_TN      FP_FN
+N_Phenotype                 175         25
+A_phenotype                 199          1
+
+Test: Fisher's Exact Test
+Reason: At least one cell < 5 (minimum: 1)
+Odds Ratio: 0.0352
+p-value: 0.000000
+Holm-Bonferroni rank: 1 (sorted by p-value)
+Holm-Bonferroni adjusted alpha: 0.008333 (0.05/6)
+Result: SIGNIFICANT difference (p < 0.008333)
+
+Comparison 3: N_Phenotype vs MALDI_TOF
+----------------------------------------
+Test                      TP_TN      FP_FN
+N_Phenotype                 175         25
+MALDI_TOF                   196          4
+
+Test: Fisher's Exact Test
+Reason: At least one cell < 5 (minimum: 4)
+Odds Ratio: 0.1429
+p-value: 0.000058
+Holm-Bonferroni rank: 3 (sorted by p-value)
+Holm-Bonferroni adjusted alpha: 0.012500 (0.05/4)
+Result: SIGNIFICANT difference (p < 0.012500)
+
+Comparison 4: P_phenotype vs A_phenotype
+----------------------------------------
+Test                      TP_TN      FP_FN
+P_phenotype                 197          3
+A_phenotype                 199          1
+
+Test: Fisher's Exact Test
+Reason: At least one cell < 5 (minimum: 1)
+Odds Ratio: 0.3300
+p-value: 0.623113
+Holm-Bonferroni rank: 5 (sorted by p-value)
+Holm-Bonferroni adjusted alpha: 0.025000 (0.05/2)
+Result: NO significant difference (p >= 0.025000)
+
+Comparison 5: P_phenotype vs MALDI_TOF
+----------------------------------------
+Test                      TP_TN      FP_FN
+P_phenotype                 197          3
+MALDI_TOF                   196          4
+
+Test: Fisher's Exact Test
+Reason: At least one cell < 5 (minimum: 3)
+Odds Ratio: 1.3401
+p-value: 1.000000
+Holm-Bonferroni rank: 6 (sorted by p-value)
+Holm-Bonferroni adjusted alpha: 0.050000 (0.05/1)
+Result: NO significant difference (p >= 0.050000)
+
+Comparison 6: A_phenotype vs MALDI_TOF
+----------------------------------------
+Test                      TP_TN      FP_FN
+A_phenotype                 199          1
+MALDI_TOF                   196          4
+
+Test: Fisher's Exact Test
+Reason: At least one cell < 5 (minimum: 1)
+Odds Ratio: 4.0612
+p-value: 0.371855
+Holm-Bonferroni rank: 4 (sorted by p-value)
+Holm-Bonferroni adjusted alpha: 0.016667 (0.05/3)
+Result: NO significant difference (p >= 0.016667)
+
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================

@@ -1,0 +1,59 @@
+================================================================================
+TASK 2: CONTINGENCY TABLE COMPARISON (3 GROUPS)
+================================================================================
+Analysis Date: 2025-11-15 18:11:35
+Input File: C:\Users\user\OneDrive - Baylor College of Medicine\CPEP Fellow\Research projects\ATB effect\Current data sharing\Final file for publication\Python scripts\Basic scripts\task2_data_template.csv
+
+--------------------------------------------------------------------------------
+SENSITIVITY FOR EACH GROUP
+--------------------------------------------------------------------------------
+
+Original:
+  Correct: 45
+  Incorrect: 5
+  Total: 50
+  Sensitivity: 0.9000 (90.00%)
+  Formula: Correct/(Correct+Incorrect) = 45/(45+5) = 45/50
+  95% CI (Wilson Score): 0.7864 - 0.9565 (78.64% - 95.65%)
+
+Subculture:
+  Correct: 40
+  Incorrect: 10
+  Total: 50
+  Sensitivity: 0.8000 (80.00%)
+  Formula: Correct/(Correct+Incorrect) = 40/(40+10) = 40/50
+  95% CI (Wilson Score): 0.6696 - 0.8876 (66.96% - 88.76%)
+
+Control:
+  Correct: 40
+  Incorrect: 10
+  Total: 50
+  Sensitivity: 0.8000 (80.00%)
+  Formula: Correct/(Correct+Incorrect) = 40/(40+10) = 40/50
+  95% CI (Wilson Score): 0.6696 - 0.8876 (66.96% - 88.76%)
+
+--------------------------------------------------------------------------------
+CONTINGENCY TABLE (3x2)
+--------------------------------------------------------------------------------
+
+Group                Correct    Incorrect    Total
+Original                  45            5       50
+Subculture                40           10       50
+Control                   40           10       50
+
+--------------------------------------------------------------------------------
+OVERALL STATISTICAL COMPARISON
+--------------------------------------------------------------------------------
+
+Test Used: Chi-squared Test
+Reason: All cells have at least 5 entries (minimum: 5)
+Chi-squared statistic: 2.4000
+Degrees of freedom: 2
+p-value: 0.301194
+
+OVERALL CONCLUSION: There is NO statistically significant difference among the groups (p >= 0.05)
+Pairwise comparisons not performed.
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================

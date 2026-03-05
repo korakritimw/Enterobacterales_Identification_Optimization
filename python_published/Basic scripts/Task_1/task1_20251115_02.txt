@@ -1,0 +1,123 @@
+================================================================================
+TASK 1: DIAGNOSTIC TEST PERFORMANCE METRICS
+================================================================================
+Analysis Date: 2025-11-15 10:30:43
+Input File: C:\Users\user\OneDrive - Baylor College of Medicine\CPEP Fellow\Research projects\ATB effect\Current data sharing\Final file for publication\Python scripts\Basic scripts\Task_1\task1_data_template.csv
+
+--------------------------------------------------------------------------------
+Test: N_Phenotype
+--------------------------------------------------------------------------------
+True Positive (TP):  127
+True Negative (TN):  48
+False Positive (FP): 2
+False Negative (FN): 23
+
+SENSITIVITY:
+  Value: 0.8467 (84.67%)
+  Formula: TP/(TP+FN) = 127/(127+23) = 127/150
+  95% CI (Wilson Score): 0.7804 - 0.8956 (78.04% - 89.56%)
+
+SPECIFICITY:
+  Value: 0.9600 (96.00%)
+  Formula: TN/(TN+FP) = 48/(48+2) = 48/50
+  95% CI (Wilson Score): 0.8654 - 0.9890 (86.54% - 98.90%)
+  [Note: Exact binomial test used (p-value: 0.000000) due to small sample size]
+
+ACCURACY:
+  Value: 0.8750 (87.50%)
+  Formula: (TP+TN)/(TP+TN+FP+FN) = (127+48)/(127+48+2+23) = 175/200
+  95% CI (Wilson Score): 0.8220 - 0.9139 (82.20% - 91.39%)
+  [Note: Exact binomial test used (p-value: 0.000000) due to small sample size]
+
+--------------------------------------------------------------------------------
+Test: P_phenotype
+--------------------------------------------------------------------------------
+True Positive (TP):  147
+True Negative (TN):  50
+False Positive (FP): 0
+False Negative (FN): 3
+
+SENSITIVITY:
+  Value: 0.9800 (98.00%)
+  Formula: TP/(TP+FN) = 147/(147+3) = 147/150
+  95% CI (Wilson Score): 0.9429 - 0.9932 (94.29% - 99.32%)
+  [Note: Exact binomial test used (p-value: 0.000000) due to small sample size]
+
+SPECIFICITY:
+  Value: 1.0000 (100.00%)
+  Formula: TN/(TN+FP) = 50/(50+0) = 50/50
+  95% CI (Wilson Score): 0.9287 - 1.0000 (92.87% - 100.00%)
+  [Note: Exact binomial test used (p-value: 0.000000) due to small sample size]
+
+ACCURACY:
+  Value: 0.9850 (98.50%)
+  Formula: (TP+TN)/(TP+TN+FP+FN) = (147+50)/(147+50+0+3) = 197/200
+  95% CI (Wilson Score): 0.9568 - 0.9949 (95.68% - 99.49%)
+  [Note: Exact binomial test used (p-value: 0.000000) due to small sample size]
+
+--------------------------------------------------------------------------------
+Test: A_phenotype
+--------------------------------------------------------------------------------
+True Positive (TP):  149
+True Negative (TN):  50
+False Positive (FP): 0
+False Negative (FN): 1
+
+SENSITIVITY:
+  Value: 0.9933 (99.33%)
+  Formula: TP/(TP+FN) = 149/(149+1) = 149/150
+  95% CI (Wilson Score): 0.9632 - 0.9988 (96.32% - 99.88%)
+  [Note: Exact binomial test used (p-value: 0.000000) due to small sample size]
+
+SPECIFICITY:
+  Value: 1.0000 (100.00%)
+  Formula: TN/(TN+FP) = 50/(50+0) = 50/50
+  95% CI (Wilson Score): 0.9287 - 1.0000 (92.87% - 100.00%)
+  [Note: Exact binomial test used (p-value: 0.000000) due to small sample size]
+
+ACCURACY:
+  Value: 0.9950 (99.50%)
+  Formula: (TP+TN)/(TP+TN+FP+FN) = (149+50)/(149+50+0+1) = 199/200
+  95% CI (Wilson Score): 0.9722 - 0.9991 (97.22% - 99.91%)
+  [Note: Exact binomial test used (p-value: 0.000000) due to small sample size]
+
+--------------------------------------------------------------------------------
+Test: MALDI_TOF
+--------------------------------------------------------------------------------
+True Positive (TP):  146
+True Negative (TN):  50
+False Positive (FP): 0
+False Negative (FN): 4
+
+SENSITIVITY:
+  Value: 0.9733 (97.33%)
+  Formula: TP/(TP+FN) = 146/(146+4) = 146/150
+  95% CI (Wilson Score): 0.9334 - 0.9896 (93.34% - 98.96%)
+  [Note: Exact binomial test used (p-value: 0.000000) due to small sample size]
+
+SPECIFICITY:
+  Value: 1.0000 (100.00%)
+  Formula: TN/(TN+FP) = 50/(50+0) = 50/50
+  95% CI (Wilson Score): 0.9287 - 1.0000 (92.87% - 100.00%)
+  [Note: Exact binomial test used (p-value: 0.000000) due to small sample size]
+
+ACCURACY:
+  Value: 0.9800 (98.00%)
+  Formula: (TP+TN)/(TP+TN+FP+FN) = (146+50)/(146+50+0+4) = 196/200
+  95% CI (Wilson Score): 0.9497 - 0.9922 (94.97% - 99.22%)
+  [Note: Exact binomial test used (p-value: 0.000000) due to small sample size]
+
+
+================================================================================
+SUMMARY TABLE
+================================================================================
+
+  Test_Name  Sensitivity  Sensitivity_CI_Lower  Sensitivity_CI_Upper  Specificity  Specificity_CI_Lower  Specificity_CI_Upper  Accuracy  Accuracy_CI_Lower  Accuracy_CI_Upper
+N_Phenotype     0.846667              0.780420              0.895600         0.96              0.865399              0.988961     0.875           0.821986           0.913880
+P_phenotype     0.980000              0.942853              0.993175         1.00              0.928652              1.000000     0.985           0.956834           0.994886
+A_phenotype     0.993333              0.963207              0.998822         1.00              0.928652              1.000000     0.995           0.972226           0.999117
+  MALDI_TOF     0.973333              0.933446              0.989582         1.00              0.928652              1.000000     0.980           0.949713           0.992196
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================

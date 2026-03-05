@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the article and the software itself."
+type: software
+title: "Enterobacterales Identification Optimization Analysis Scripts"
+authors:
+  - family-names: "Kijsinthopchai"
+    given-names: "Usa"
+    affiliation: "Department of Microbiology, Faculty of Medicine Siriraj Hospital, Mahidol University"
+  - family-names: "Song"
+    given-names: "Yizhe"
+    affiliation: "Department of Medicine, Washington University in St. Louis"
+  - family-names: "Yongyod"
+    given-names: "Samaporn"
+    affiliation: "Department of Microbiology, Faculty of Medicine Siriraj Hospital, Mahidol University"
+  - family-names: "Wensanthia"
+    given-names: "Thidarat"
+    affiliation: "Department of Microbiology, Faculty of Medicine Siriraj Hospital, Mahidol University"
+  - family-names: "Disthaporn"
+    given-names: "Pensiri"
+    affiliation: "Department of Microbiology, Faculty of Medicine Siriraj Hospital, Mahidol University"
+  - family-names: "Pimnon"
+    given-names: "Siriporn"
+    affiliation: "Department of Microbiology, Faculty of Medicine Siriraj Hospital, Mahidol University"
+  - family-names: "Imwattana"
+    given-names: "Korakrit"
+    affiliation: "Department of Microbiology, Faculty of Medicine Siriraj Hospital, Mahidol University"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+repository-code: "https://github.com/sscien/Enterobacterales_Identification_Optimization"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Optimizing species identification after antimicrobial pretreatment in Enterobacterales: a prospective cohort study"
+  authors:
+    - family-names: "Kijsinthopchai"
+      given-names: "Usa"
+    - family-names: "Song"
+      given-names: "Yizhe"
+    - family-names: "Yongyod"
+      given-names: "Samaporn"
+    - family-names: "Wensanthia"
+      given-names: "Thidarat"
+    - family-names: "Disthaporn"
+      given-names: "Pensiri"
+    - family-names: "Pimnon"
+      given-names: "Siriporn"
+    - family-names: "Imwattana"
+      given-names: "Korakrit"
+  journal: "BMC Microbiology"
+  year: 2026
+  status: "accepted"
+  # doi: "10.1186/xxxxx"  # Add DOI when available

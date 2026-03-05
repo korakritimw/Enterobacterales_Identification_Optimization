@@ -1,0 +1,23 @@
+================================================================================
+TASK 1: DIAGNOSTIC TEST PERFORMANCE METRICS
+================================================================================
+Analysis Date: 2025-11-15 10:29:07
+Input File: C:\Users\user\OneDrive - Baylor College of Medicine\CPEP Fellow\Research projects\ATB effect\Current data sharing\Final file for publication\Python scripts\Basic scripts\Task_1\task1_data_template.csv
+
+--------------------------------------------------------------------------------
+Test: N_Phenotype
+--------------------------------------------------------------------------------
+True Positive (TP):  127
+True Negative (TN):  48
+False Positive (FP): 2
+False Negative (FN): 23
+
+SENSITIVITY:
+  Value: 0.8467 (84.67%)
+  Formula: TP/(TP+FN) = 127/(127+23) = 127/150
+  95% CI (Wilson Score): 0.7804 - 0.8956 (78.04% - 89.56%)
+
+SPECIFICITY:
+  Value: 0.9600 (96.00%)
+  Formula: TN/(TN+FP) = 48/(48+2) = 48/50
+  95% CI (Wilson Score): 0.8654 - 0.9890 (86.54% - 98.90%)

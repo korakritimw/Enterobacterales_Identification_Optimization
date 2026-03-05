@@ -1,0 +1,55 @@
+================================================================================
+TASK 4: NUMERICAL DATA COMPARISON
+================================================================================
+Analysis Date: 2025-11-16 10:19:28
+Input File: C:\Users\user\OneDrive - Baylor College of Medicine\CPEP Fellow\Research projects\ATB effect\Current data sharing\Final file for publication\Python scripts\Basic scripts\task4_data_template.csv
+
+Column 1: Group_A (n = 240)
+Column 2: Group_B (n = 240)
+
+--------------------------------------------------------------------------------
+ANALYSIS: Group_A
+--------------------------------------------------------------------------------
+
+Shapiro-Wilk Test:
+  Statistic: 0.7792
+  p-value: 0.000000
+  Conclusion: Data is NOT NORMALLY DISTRIBUTED (p < 0.05)
+
+Descriptive Statistics (Non-Normal Distribution):
+  Median: 2.1100
+  Range: 0.0000 - 2.4500
+  Minimum: 0.0000
+  Maximum: 2.4500
+
+--------------------------------------------------------------------------------
+ANALYSIS: Group_B
+--------------------------------------------------------------------------------
+
+Shapiro-Wilk Test:
+  Statistic: 0.9882
+  p-value: 0.046853
+  Conclusion: Data is NOT NORMALLY DISTRIBUTED (p < 0.05)
+
+Descriptive Statistics (Non-Normal Distribution):
+  Median: 2.1700
+  Range: 1.6100 - 2.7700
+  Minimum: 1.6100
+  Maximum: 2.7700
+
+--------------------------------------------------------------------------------
+STATISTICAL COMPARISON
+--------------------------------------------------------------------------------
+
+Test Used: Mann-Whitney U Test
+Reason: Group_A is not normally distributed; Group_B is not normally distributed
+
+Mann-Whitney U statistic: 22519.5000
+z-score: -4.1333
+p-value: 0.000036
+
+CONCLUSION: There is a statistically significant difference between the two columns (p < 0.05)
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================

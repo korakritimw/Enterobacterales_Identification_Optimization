@@ -1,0 +1,57 @@
+================================================================================
+TASK 4: NUMERICAL DATA COMPARISON
+================================================================================
+Analysis Date: 2025-11-15 10:35:14
+Input File: C:\Users\user\OneDrive - Baylor College of Medicine\CPEP Fellow\Research projects\ATB effect\Current data sharing\Final file for publication\Python scripts\Basic scripts\task4_data_template.csv
+
+Column 1: Group_A (n = 10)
+Column 2: Group_B (n = 10)
+
+--------------------------------------------------------------------------------
+ANALYSIS: Group_A
+--------------------------------------------------------------------------------
+
+Shapiro-Wilk Test:
+  Statistic: 0.9897
+  p-value: 0.996424
+  Conclusion: Data is NORMALLY DISTRIBUTED (p >= 0.05)
+
+Descriptive Statistics (Normal Distribution):
+  Mean: 12.8000
+  Standard Deviation: 0.6236
+  95% Confidence Interval: 12.3539 - 13.2461
+  Formula: Mean ± t(0.975, df=9) × SE
+           12.8000 ± 2.2622 × 0.1972
+
+--------------------------------------------------------------------------------
+ANALYSIS: Group_B
+--------------------------------------------------------------------------------
+
+Shapiro-Wilk Test:
+  Statistic: 0.9676
+  p-value: 0.868212
+  Conclusion: Data is NORMALLY DISTRIBUTED (p >= 0.05)
+
+Descriptive Statistics (Normal Distribution):
+  Mean: 15.6700
+  Standard Deviation: 0.5293
+  95% Confidence Interval: 15.2914 - 16.0486
+  Formula: Mean ± t(0.975, df=9) × SE
+           15.6700 ± 2.2622 × 0.1674
+
+--------------------------------------------------------------------------------
+STATISTICAL COMPARISON
+--------------------------------------------------------------------------------
+
+Test Used: Mann-Whitney U Test
+Reason: Group_A has fewer than 30 entries (n=10); Group_B has fewer than 30 entries (n=10)
+
+Mann-Whitney U statistic: 0.0000
+z-score: -3.7796
+p-value: 0.000183
+
+CONCLUSION: There is a statistically significant difference between the two columns (p < 0.05)
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================

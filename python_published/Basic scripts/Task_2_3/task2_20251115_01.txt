@@ -1,0 +1,103 @@
+================================================================================
+TASK 2: CONTINGENCY TABLE COMPARISON (3 GROUPS)
+================================================================================
+Analysis Date: 2025-11-15 18:19:41
+Input File: C:\Users\user\OneDrive - Baylor College of Medicine\CPEP Fellow\Research projects\ATB effect\Current data sharing\Final file for publication\Python scripts\Basic scripts\Task_2_3\task2_data_template.csv
+
+--------------------------------------------------------------------------------
+SENSITIVITY FOR EACH GROUP
+--------------------------------------------------------------------------------
+
+Original:
+  Correct: 180
+  Incorrect: 60
+  Total: 240
+  Sensitivity: 0.7500 (75.00%)
+  Formula: Correct/(Correct+Incorrect) = 180/(180+60) = 180/240
+  95% CI (Wilson Score): 0.6916 - 0.8006 (69.16% - 80.06%)
+
+Subculture:
+  Correct: 211
+  Incorrect: 29
+  Total: 240
+  Sensitivity: 0.8792 (87.92%)
+  Formula: Correct/(Correct+Incorrect) = 211/(211+29) = 211/240
+  95% CI (Wilson Score): 0.8319 - 0.9145 (83.19% - 91.45%)
+
+Control:
+  Correct: 146
+  Incorrect: 4
+  Total: 150
+  Sensitivity: 0.9733 (97.33%)
+  Formula: Correct/(Correct+Incorrect) = 146/(146+4) = 146/150
+  95% CI (Wilson Score): 0.9334 - 0.9896 (93.34% - 98.96%)
+
+--------------------------------------------------------------------------------
+CONTINGENCY TABLE (3x2)
+--------------------------------------------------------------------------------
+
+Group                Correct    Incorrect    Total
+Original                 180           60      240
+Subculture               211           29      240
+Control                  146            4      150
+
+--------------------------------------------------------------------------------
+OVERALL STATISTICAL COMPARISON
+--------------------------------------------------------------------------------
+
+Test Used: Fisher's Exact Test (generalized for RxC table)
+Reason: At least one cell has fewer than 5 entries (minimum: 4)
+Chi-squared statistic: 38.8012
+Degrees of freedom: 2
+p-value: 0.000000
+
+OVERALL CONCLUSION: There is a statistically significant difference among the groups (p < 0.05)
+Proceeding with pairwise comparisons...
+
+--------------------------------------------------------------------------------
+PAIRWISE COMPARISONS
+--------------------------------------------------------------------------------
+
+Comparison 1: Original vs Subculture
+----------------------------------------
+Group                Correct    Incorrect
+Original                 180           60
+Subculture               211           29
+
+Test: Chi-squared Test (with Yates' correction)
+Reason: All cells >= 5 (minimum: 29)
+Chi-squared statistic: 12.4141
+p-value: 0.000426
+Bonferroni-corrected alpha: 0.016667 (0.05/3 comparisons)
+Result: SIGNIFICANT difference (p < 0.016667)
+
+Comparison 2: Original vs Control
+----------------------------------------
+Group                Correct    Incorrect
+Original                 180           60
+Control                  146            4
+
+Test: Fisher's Exact Test
+Reason: At least one cell < 5 (minimum: 4)
+Odds Ratio: 0.0822
+p-value: 0.000000
+Bonferroni-corrected alpha: 0.016667 (0.05/3 comparisons)
+Result: SIGNIFICANT difference (p < 0.016667)
+
+Comparison 3: Subculture vs Control
+----------------------------------------
+Group                Correct    Incorrect
+Subculture               211           29
+Control                  146            4
+
+Test: Fisher's Exact Test
+Reason: At least one cell < 5 (minimum: 4)
+Odds Ratio: 0.1993
+p-value: 0.001140
+Bonferroni-corrected alpha: 0.016667 (0.05/3 comparisons)
+Result: SIGNIFICANT difference (p < 0.016667)
+
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================

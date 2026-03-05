@@ -1,0 +1,49 @@
+================================================================================
+TASK 2: TWO-BY-TWO TABLE COMPARISON
+================================================================================
+Analysis Date: 2025-11-15 10:34:57
+Input File: C:\Users\user\OneDrive - Baylor College of Medicine\CPEP Fellow\Research projects\ATB effect\Current data sharing\Final file for publication\Python scripts\Basic scripts\task2_data_template.csv
+
+--------------------------------------------------------------------------------
+SENSITIVITY FOR EACH TEST
+--------------------------------------------------------------------------------
+
+Test_A:
+  Correct: 45
+  Incorrect: 5
+  Total: 50
+  Sensitivity: 0.9000 (90.00%)
+  Formula: Correct/(Correct+Incorrect) = 45/(45+5) = 45/50
+  95% CI (Wilson Score): 0.7864 - 0.9565 (78.64% - 95.65%)
+
+Test_B:
+  Correct: 40
+  Incorrect: 10
+  Total: 50
+  Sensitivity: 0.8000 (80.00%)
+  Formula: Correct/(Correct+Incorrect) = 40/(40+10) = 40/50
+  95% CI (Wilson Score): 0.6696 - 0.8876 (66.96% - 88.76%)
+
+--------------------------------------------------------------------------------
+TWO-BY-TWO CONTINGENCY TABLE
+--------------------------------------------------------------------------------
+
+                Correct    Incorrect
+Test_A                45          5
+Test_B                40         10
+
+--------------------------------------------------------------------------------
+STATISTICAL COMPARISON
+--------------------------------------------------------------------------------
+
+Test Used: Chi-squared Test (with Yates' correction)
+Reason: All cells have at least 5 entries (minimum: 5)
+Chi-squared statistic: 1.2549
+Degrees of freedom: 1
+p-value: 0.262618
+
+CONCLUSION: There is NO statistically significant difference between the two tests (p >= 0.05)
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================

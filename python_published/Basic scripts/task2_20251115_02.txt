@@ -1,0 +1,10 @@
+================================================================================
+TASK 2: TWO-BY-TWO TABLE COMPARISON
+================================================================================
+Analysis Date: 2025-11-15 18:07:03
+Input File: C:\Users\user\OneDrive - Baylor College of Medicine\CPEP Fellow\Research projects\ATB effect\Current data sharing\Final file for publication\Python scripts\Basic scripts\task2_data_template.csv
+
+--------------------------------------------------------------------------------
+SENSITIVITY FOR EACH TEST
+--------------------------------------------------------------------------------
+

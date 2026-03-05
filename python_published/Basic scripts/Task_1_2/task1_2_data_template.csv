@@ -1,0 +1,5 @@
+Test_Name,TP,TN,FP,FN
+N_Phenotype,127,48,2,23
+P_phenotype,147,50,0,3
+A_phenotype,149,50,0,1
+MALDI_TOF,146,50,0,4
